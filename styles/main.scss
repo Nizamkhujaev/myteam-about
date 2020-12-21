@@ -75,6 +75,14 @@ body {
   box-sizing: border-box;
   max-width: 1140px;
 
+  @media only screen and (max-width:768px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    max-width: 720px;
+  }
+
   @media only screen and (max-width:576px) {
     width: 100%;
     margin: 0 auto;
@@ -139,6 +147,10 @@ body {
 
   &-nav.nav--first {
     padding: 83px 20px 83px 80px;
+
+    @media only screen and (max-width:768px) {
+      padding: 72px 20px 72px 48px;
+    }
   }
 
   @media only screen and (max-width:576px) {
@@ -174,6 +186,11 @@ body {
   justify-content: space-between;
   padding-bottom: 255px;
 
+  @media only screen and (max-width:768px) {
+    flex-direction: column;
+    padding-bottom: 112px;
+  }
+
   @media only screen and (max-width:576px) {
     flex-direction: column;
     padding-bottom: 120px;
@@ -185,6 +202,16 @@ body {
     font-size: 64px;
     line-height: 100px;
     color: #FFFFFF;
+
+    @media only screen and (max-width:768px) {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 56px;
+      text-align: center;
+      margin-bottom: 24px;
+      color: #FFFFFF;
+    }
 
     @media only screen and (max-width:576px) {
       font-style: normal;
@@ -219,6 +246,23 @@ body {
       height: 4px;
       width: 50px;
       background-color: $lightcoral;
+    }
+
+    @media only screen and (max-width:768px) {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      padding-top: 0;
+      width: 457px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #FFFFFF;
+
+      &::before {
+        content: none;
+      }
     }
 
     @media only screen and (max-width:576px) {
@@ -259,6 +303,10 @@ body {
   &-inner {
     padding: 140px 0 100px 0;
 
+    @media only screen and (max-width:768px) {
+      padding: 100px 83px;
+    }
+
     @media only screen and (max-width:576px) {
       padding: 88px 0;
     }
@@ -293,12 +341,35 @@ body {
   padding: 32px 0 26px 0;
   margin-bottom: 48px;
 
+  &.card--tablet {
+    display: none;
+
+    @media only screen and (max-width:768px) {
+      display: block;
+    }
+
+    @media only screen and (max-width:576px) {
+      display: none;
+    }
+  }
+
+  &.card--none {
+    @media only screen and (max-width:768px) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    width: 48.5%;
+  }
+
   @media only screen and (max-width:576px) {
     width: 55%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 52px;
   }
+
 
   &__top {
     text-align: center;
@@ -412,6 +483,10 @@ body {
   background-position: left top;
   background-image: url(../images/sc-3.svg);
 
+  @media only screen and (max-width:768px) {
+    background-position: 0 -100px;
+  }
+
   @media only screen and (max-width:576px) {
     background-position: -100px -100px;
   }
@@ -419,6 +494,11 @@ body {
 
   &-inner {
     padding: 140px 0 151px 0;
+
+    @media only screen and (max-width:768px) {
+      padding: 100px 20px;
+      box-sizing: border-box;
+    }
 
     @media only screen and (max-width:576px) {
       padding: 88px 0;
@@ -463,6 +543,12 @@ body {
       margin-bottom: 0;
     }
 
+    @media only screen and (max-width:768px) {
+      width: 103px;
+      height: 24px;
+      display: inline-block;
+    }
+
     @media only screen and (max-width:576px) {
       margin-left: auto;
       margin-right: auto;
@@ -479,6 +565,10 @@ body {
   background-image: url(../images/bgi-4.svg);
   background-position: left bottom;
 
+  @media only screen and (max-width:768px) {
+    background-size: 150px 110px;
+  }
+
   @media only screen and (max-width:576px) {
     background-position: 0 195px;
   }
@@ -489,6 +579,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media only screen and (max-width:768px) {
+      justify-content: center;
+      padding: 76px 80px;
+    }
 
     @media only screen and (max-width:576px) {
       flex-direction: column;
@@ -501,6 +596,15 @@ body {
       font-size: 48px;
       line-height: 48px;
       color: #012F34;
+
+      @media only screen and (max-width:768px) {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+        margin-right: 54px;
+        color: #012F34;
+      }
 
       @media only screen and (max-width:576px) {
         width: 350px;
@@ -616,6 +720,11 @@ body {
     justify-content: space-between;
     padding: 48px 0;
 
+    @media only screen and (max-width:768px) {
+      flex-direction: column;
+      padding: 56px 24px;
+    }
+
     @media only screen and(max-width:576px) {
       flex-direction: column;
       text-align: center;
@@ -660,6 +769,10 @@ body {
     text-align: right;
     margin-bottom: 51px;
 
+    @media only screen and (max-width:768px) {
+      margin-bottom: 0;
+    }
+
     @media only screen and(max-width:576px) {
       text-align: center;
       margin-bottom: 16px;
@@ -697,9 +810,32 @@ body {
     opacity: 0.6;
   }
 
+  &-right {
+
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width:768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    @media only screen and (max-width:576px) {
+      flex-direction: column;
+    }
+
+  }
+
 
   &-left {
     display: flex;
+
+    @media only screen and (max-width:768px) {
+      justify-content: space-between;
+      margin-bottom: 34px;
+    }
 
     @media only screen and(max-width:576px) {
       flex-direction: column;
@@ -729,11 +865,14 @@ body {
     mix-blend-mode: normal;
     opacity: 0.6;
 
+    @media only screen and (max-width:768px) {
+      text-align: right;
+    }
+
     @media only screen and(max-width:576px) {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 42px;
     }
 
   }
